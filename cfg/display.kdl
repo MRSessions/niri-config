@@ -5,22 +5,59 @@
 
 //Left monitor
 output "HDMI-A-3" {
-	mode "1920x1080@120.000"
+	mode "1920x1080@59.939"
 	scale 1
-	position x=0 y=0
+	position x=0 y=-10000
+
+  hot-corners {
+		off
+	}
+}
+
+output "HDMI-A-1" {
+	mode "1920x1080@59.940"
+	scale 1
+	position x=0 y=-10000
+
+  hot-corners {
+		off
+	}
 }
 
 //Primary
 output "DP-5" {
 	mode "3840x1080@240.000"
 	scale 1
-	position x=1920 y=0
+	position x=0 y=0
+	focus-at-startup
+
+	hot-corners {
+		off
+	}
 }
+
+//Primary (Meredith's)
+//output "DP-5" {
+//	mode "1920x1080"
+//	scale 1
+//	position x=0 y=0
+//	focus-at-startup
+
+//	hot-corners {
+//		off
+//	}
+//}
 
 //right
 output "DP-1" {
 	mode "1920x1080@60.000"
 	scale 1
-	position x=5760 y=0
+	position x=0 y=10000
+//	position x=5760 y=0
+//	position x=1920 y=0
+
+	hot-corners {
+		off
+	}
 }
 
